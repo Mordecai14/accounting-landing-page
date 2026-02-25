@@ -1,0 +1,38 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-blue-950 text-slate-400 py-12 border-t border-slate-800">
+  <div class="w-full mx-auto container lg:max-w-4xl md:max-w-2xl px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined textPrincipal text-3xl">🏦</span>
+        <span class="text-textBlue text-lg font-bold"
+          >Robledo Meza y Asociados S.C.</span
+        >
+      </div>
+      <div class="flex gap-8 text-sm">
+        <a class="hover:textPrincipal transition-colors" href="#">Privacidad</a>
+        <a class="hover:textPrincipal transition-colors" href="#">Términos</a>
+        <a class="hover:textPrincipal transition-colors" href="#">Cookies</a>
+      </div>
+      <div class="flex gap-4">
+        <div
+          class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer"
+        >
+          <span class="material-symbols-outlined text-xl">⛓️‍💥</span>
+        </div>
+        <div
+          class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all cursor-pointer"
+        >
+          <span class="material-symbols-outlined text-xl">🌎</span>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs">
+      <p>
+        © {currentYear} Robledo Meza y Asociados S.C. Todos los derechos reservados.
+      </p>
+    </div>
+  </div>
+</footer>

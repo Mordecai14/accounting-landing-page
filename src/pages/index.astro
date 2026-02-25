@@ -1,11 +1,64 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Hero from "../views/Hero.astro";
+import Services from "../views/Services.astro";
+import AboutUs from "../views/AboutUs.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main class="scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
+    <Hero />
+    <Services />
+    <section class="pb-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="relative group overflow-hidden bg-primary rounded-3xl p-10 text-white shadow-2xl"
+          >
+            <div class="relative z-10">
+              <h3 class="text-3xl font-bold mb-4">Reporte de cumplimiento</h3>
+              <p class="text-white/80 mb-8">
+                Obtenga una visión clara de su situación ante las autoridades.
+              </p>
+              <a
+                class="bg-white text-primary px-8 py-3 rounded-xl font-bold hover:bg-slate-100 transition-colors"
+                href="https://login.siat.sat.gob.mx/nidp/app/login"
+                target="_blank"
+              >
+                Obtener reporte
+              </a>
+            </div>
+            <span
+              class="material-symbols-outlined absolute -right-8 -bottom-8 text-[12rem] opacity-10 rotate-12"
+              >assignment_turned_in</span
+            >
+          </div>
+          <div
+            class="relative group overflow-hidden bg-slate-900 rounded-3xl p-10 text-white shadow-2xl"
+          >
+            <div class="relative z-10">
+              <h3 class="text-3xl font-bold mb-4">
+                Constancia de situación fiscal
+              </h3>
+              <p class="text-white/80 mb-8">
+                Trámite ágil y profesional para sus requerimientos oficiales.
+              </p>
+              <a
+                class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors"
+                href="https://login.siat.sat.gob.mx/nidp/app/login"
+                target="_blank"
+              >
+                Obtener constancia
+              </a>
+            </div>
+            <span
+              class="material-symbols-outlined absolute -right-8 -bottom-8 text-[12rem] opacity-10 rotate-12"
+              >badge</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <AboutUs />
+  </main>
 </Layout>
